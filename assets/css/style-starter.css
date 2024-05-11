@@ -11716,13 +11716,13 @@ button.btn-contact:hover {
 
 /*# sourceMappingURL=style-starter.css.map */
 
-/* nascondi div su mobile */
+/* nascondi div su mobile
 @media (max-width: 768px) {
   .mobile-hidden {
       display: none;
   }
 }
-
+*/
 
 /* Rimpicciolisci logo in base allo schermo dello smartphone */
 @media (max-width: 340px) {
