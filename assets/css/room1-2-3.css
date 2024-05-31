@@ -21,13 +21,13 @@ body {
     height: auto;
     cursor: pointer;
     transition: transform 0.2s, border 0.2s;
-    border: 5px solid white; /* Aggiunta della cornice arancione */
+    border: 5px solid white; /* Modifica della cornice a bianco */
     box-sizing: border-box;
 }
 
 .gallery-thumb:hover {
     transform: scale(1.05);
-    border-color: whitesmoke; /* Cambio colore della cornice al passaggio del mouse */
+    border-color: lightgray; /* Cambio colore della cornice al passaggio del mouse */
 }
 
 .modal {
@@ -42,9 +42,17 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+/* l'immagine va verticalmente al centro su smartphone*/
+@media (max-width: 400px) {
+    .modal {
+        padding-top: 50%;
+    }
+}
+
 .modal-content {
     display: block;
     margin: auto;
+    margin-top: 30px; /* Aggiunta di margine superiore per staccare la foto dalla parte superiore */
     max-width: 90%;
     max-height: 90%;
 }
@@ -58,6 +66,7 @@ body {
     font-weight: bold;
     transition: 0.3s;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5); /* Aggiunta di sfondo per maggiore visibilità */
 }
 
 .close:hover,
@@ -65,6 +74,36 @@ body {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+    background-color: rgba(66, 66, 66, 0.8);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px; /* Aumento della dimensione del font per maggiore visibilità */
+    transition: 0.3s;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.5); /* Aggiunta di sfondo per maggiore visibilità */
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(66, 66, 66, 0.8);
 }
 
 /* Media Queries per la responsività */
