@@ -55,6 +55,7 @@ body {
     margin-top: 30px; /* Aggiunta di margine superiore per staccare la foto dalla parte superiore */
     max-width: 90%;
     max-height: 90%;
+    object-fit: contain; /* Mantiene le proporzioni dell'immagine */
 }
 
 .close {
