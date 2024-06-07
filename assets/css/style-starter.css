@@ -11803,3 +11803,15 @@ button.btn-contact:hover {
   }
 }
 
+
+@media (max-width: 576px) {
+  .footer-1 {
+    padding-top: 45px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .footer-1 {
+    padding-top: 10px;
+  }
+}
